@@ -10,16 +10,15 @@ class Rational(object):
                 numerator /= numerator
         self.numerator=numerator
         self.denominator= denominator
-    def printer_1(self):
-        return (self.numerator,"/",self.denominator)
+    def printer(self):
+        return (str(self.numerator)+"/"+str(self.denominator))
     def printer_2(self):
-        return float(self.numerator/self.denominator)
+        return float(float(self.numerator)/float(self.denominator))
     pass
 # 3/6
 # 12/4
 rat=Rational(6,12)
 print(rat.numerator)
 print(rat.denominator)
-print(rat.printer_1)
-print(rat.printer_2)
-#nichego ne rabotaet
+print(rat.printer())
+print(rat.printer_2())
