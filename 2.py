@@ -22,3 +22,4 @@ print(rat.numerator)
 print(rat.denominator)
 print(rat.printer_1)
 print(rat.printer_2)
+#nichego ne rabotaet
