@@ -1,0 +1,26 @@
+# Task 2.
+# Create a class that performs statistical processing of a text file - counting characters, words, sentences, etc.
+# Determine the required attributes-data and attributes-methods in class for working with the text file.
+class proc:
+    def __init__(self,text):
+        self.words=0
+        self.characters=0
+        self.sentences=0
+        self.text=text
+    def printer(self):
+        return self.text
+    def result(self):
+        return self.words,self.characters,self.sentences
+    def processing(self):
+        for x in self.text:
+            self.characters+=1
+            if x==' ' :
+                self.words+=1
+            if x=='.':
+                self.sentences+=1
+
+f=open("text.txt")
+text=proc(f.read())
+text.processing()
+print(text.printer())
+print(text.result())
